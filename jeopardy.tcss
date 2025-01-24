@@ -1,7 +1,22 @@
+$base: #1e1e2e;
+$mantle: #181825;
+$crust: #11111b;
+$text: #cdd6f4;
+$subtext: #a6adc8;
+$blue: #89b4fa;
+$red: #f38ba8;
+$green: #a6e3a1;
+$yellow: #f9e2af;
+$peach: #fab387;
+$mauve: #cba6f7;
+$teal: #94e2d5;
+$lavender: #b4befe;
+$surface0: #313244;
+
 Horizontal {
     width: 100%;
     height: 100%;
-    background: #000033;
+    background: $base;
 }
 
 Grid {
@@ -13,31 +28,31 @@ Grid {
 }
 
 VerticalScroll {
-  scrollbar-size-vertical: 0;
+    scrollbar-size-vertical: 0;
 }
 
 .sidebar {
     width: 30%;
-    background: #00001a;
+    background: $crust;
     padding: 2;
-    border-left: wide #000033;
+    border-left: wide $base;
 }
 
 JeopardyBanner {
     width: 100%;
-    color: #ffff00;
+    color: $yellow;
     content-align: center middle;
     padding: 2;
     text-style: bold;
     margin-bottom: 2;
-    border: round #ffff00;
+    border: round $yellow;
 }
 
 TeamScore.score-box {
     width: 100%;
     min-height: 20%;
-    color: white;
-    border: double #ffff00;
+    color: $text;
+    border: double $yellow;
     margin: 1 0;
     padding: 1;
     content-align: center middle;
@@ -45,20 +60,20 @@ TeamScore.score-box {
     min-width: 15;
 }
 
-TeamScore.team-1 { background: rgb(138, 43, 226); }
-TeamScore.team-2 { background: rgb(220, 20, 60); }
-TeamScore.team-3 { background: rgb(0, 139, 139); }
-TeamScore.team-4 { background: rgb(46, 139, 87); }
-TeamScore.team-5 { background: rgb(255, 140, 0); }
+TeamScore.team-1 { background: $mauve; }
+TeamScore.team-2 { background: $red; }
+TeamScore.team-3 { background: $teal; }
+TeamScore.team-4 { background: $green; }
+TeamScore.team-5 { background: $peach; }
 
 CategoryTitle {
     width: 100%;
     height: 100%;
     content-align: center middle;
     padding: 1;
-    background: #000080;
-    color: white;
-    border: tall $background;
+    background: $blue;
+    color: $text;
+    border: tall $base;
     text-align: center;
     text-style: bold;
 }
@@ -66,16 +81,16 @@ CategoryTitle {
 ValueButton {
     width: 100%;
     height: 100%;
-    background: #000080;
-    color: #ffff00;
-    border: tall $background;
+    background: $blue;
+    color: $yellow;
+    border: tall $base;
     content-align: center middle;
     text-style: bold italic;
 }
 
 ValueButton:hover {
-    background: #ffff00;
-    color: #000080;
+    background: $yellow;
+    color: $blue;
 }
 
 TeamScore.score-box:first-of-type {
@@ -83,8 +98,8 @@ TeamScore.score-box:first-of-type {
 }
 
 TeamScore.score-box:hover {
-    border: double white;
-    background: #000080;
+    border: double $lavender;
+    background: $surface0;
     text-style: reverse;
 }
 
